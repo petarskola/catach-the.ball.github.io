@@ -1,0 +1,117 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: rgb(97, 97, 99);
+    font-family: Impact;
+    user-select: none;
+}
+.game
+{
+    width: 60%;
+    height: 70%;
+    background: rgb(62, 62, 65);
+    border-radius: 3vh;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    z-index: -1;
+}
+#ball
+{
+    width: 5vh;
+    height: 5vh;
+    background: rgb(219, 78, 78);
+    position: absolute;
+    z-index: 2;
+    border-radius: 100%;
+    transition: all .1s ease;
+    left: 47.5%;
+    top: 47.5%;
+}
+#ballS
+{
+    width: 5vh;
+    height: 5vh;
+    background: rgb(219, 78, 78);
+    position: absolute;
+    z-index: 3;
+    border-radius: 100%;
+    transition: all .1s ease;
+    left: 47.5%;
+    top: 47.5%;
+}
+#ballL
+{
+    width: 5vh;
+    height: 5vh;
+    background: rgb(219, 78, 78);
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    transition: all .1s ease;
+    left: 47.5%;
+    top: 47.5%;
+    display: none;
+}
+#ball:hover, #ballS:hover
+{
+    filter:saturate(1.4);
+}
+h1
+{
+    padding: 0;
+    margin: 0;
+    letter-spacing: 3vh;
+    color: lightgrey;
+    z-index: 3;
+    font-size: 0;
+    position: absolute;
+    width: 100%;
+    height: .1vh;
+    text-align: center;
+    inset: 0;
+    margin: auto;
+    transition: all .1s ease;
+}
+h3
+{
+    color: rgb(190, 190, 190);
+    letter-spacing: .4vh;
+    font-size: 3vh;
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+}
+#taps
+{
+    bottom: -12vh;
+}
+#res
+{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    padding: 0;
+    top: 30%;
+    border: none;
+    font-family: Impact;
+    font-size: 3vh;
+    letter-spacing: .5vh;
+    background: rgb(28, 28, 29);
+    border-radius: 3vh;
+    color: rgb(97, 97, 99);
+    transition: all .2s ease;
+    z-index: 200;
+}
+#res:hover
+{
+    background: rgb(97, 97, 99);
+    color: rgb(28, 28, 29);
+}
+#res:active
+{
+    color: lightgrey;
+}

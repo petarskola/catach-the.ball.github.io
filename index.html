@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch The Ball</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <div class="game" onclick="over()">
+        <h3 id="timee">TIME: 200ms</h3>
+        <h3 id="taps">TAPS: 0</h3>
+    </div>
+    <input type="button" value="RESTART" onclick="restart()" id="res">
+    <div id="ballS" onclick="startG()"></div>
+    <div id="ball" onclick="refresh()"></div>
+    <div id="ballL"></div>
+    <h1 id="gameover">GAME OVER</h1>
+    <script src="script.js"></script>
+</body>
+</html>
